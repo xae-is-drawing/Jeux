@@ -12,6 +12,10 @@ This will be useful to be able to play multiple parties at the same time, allowi
 JEU DE BASE
 ''' 
 
+def generate_grid():
+    grille = [[0 for j in range(4)] for i in range(4)]
+    return grille
+
 def addition_compatible(nb1, nb2):
     # IN : nb1 (int), nb2 (int)
     # OUT : bool
@@ -24,16 +28,20 @@ def wanted_direction():
     # IN : none
     # OUT : direction (str)
     # Returns the direction chosen by the player
-    # ADD A WHILE TO SECURE THE INPUT
-    key_pressed = input()
-    if key_pressed == <right key>:
+    mov = ['u', 'r', 'l', 'd'] #up, right, left, down
+    print("Press U for UP, D for DOWN, R for RIGHT and L for LEFT.")
+    key_pressed = input().lower()
+    while key_pressed not in mov:
+        print("Invalid key. It must be U or D or R or L.")
+        key_pressed = input().lower()
+    if key_pressed == 'r':
         direction = "right"
-    elif key_pressed == <left key>:
+    elif key_pressed == 'l':
         direction = "left"
-    elif key_pressed == <up key>:
+    elif key_pressed == 'u':
         direction = "up"
     else:
-        direction = "bottom"
+        direction = "down"
     return direction 
 
 def add_numbers(grille):
