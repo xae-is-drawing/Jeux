@@ -4,12 +4,14 @@
 # OUT : grille (tableau 2D, la grille avec des émojis discord à la place des nombres) 
 
 '''Why not putting the while game in a class?
-This will be useful to be able to play multiple parties at the same time, allowing more than 1 person to play at the same moment'''
+This will be useful to be able to play multiple parties at the same time, allowing more than 1 person to play at the same moment
+
+ Start date: 17/01/2025'''
 
 
 
 '''
-JEU DE BASE
+BASE OF THE GAME
 ''' 
 
 def generate_grid():
