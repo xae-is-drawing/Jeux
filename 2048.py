@@ -1,5 +1,15 @@
+# Jeu de base -> jeu sur discord
+# ===> def discord_emojis(grille) -> grille
+# IN : grille (tableau 2D, la grille avec tous les nombres)
+# OUT : grille (tableau 2D, la grille avec des émojis discord à la place des nombres) 
+
+'''Why not putting the while game in a class?
+This will be useful to be able to play multiple parties at the same time, allowing more than 1 person to play at the same moment'''
+
+
+
 '''
-JEU DE BASE
+BASE OF THE GAME
 ''' 
 
 def generate_grid():
