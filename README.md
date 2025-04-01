@@ -3,6 +3,7 @@ Just a French student who sometimes uses free time to code games for fun.
 > Games you can play
 
 — Hangman in Python (please, note that you will have to install the `wonderwords` package. (Learn more about this package [here](https://github.com/mrmaxguns/wonderwordsmodule).)
+— 2048 in Python
 
 > Why do I code this?
 
